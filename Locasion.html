@@ -1,172 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container-fluid bg-dark fixed-top">
-        <nav class="navbar navbar-expand-md navbar navbar-dark bg-dark container">
-            <div class="container-fluid">
-                <img src="imagenes/xfc.png" alt="" width="40" height="40"> 
-                <a class="navbar-brand mx-2" href="Index.html">XAVY FRIED CHICKEN</a>
+  <div class="container-fluid bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar navbar-dark bg-dark container">
+      <div class="container-fluid">
+        <img src="imagenes/xfc.png" alt="" width="40" height="40">
+        <a class="navbar-brand mx-2 fw-bold" href="Index.html">XAVY FRIED CHICKEN</a>
 
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link fs-6 fw-bold" aria-current="page" href="Index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-6 fw-bold" href="Menu.html">MENU</a>
-                        </li>
-                    
-                        <li class="nav-item">
-                            <a class="nav-link fs-6 active fw-bold" href="Locasion.html">LOCACIÓN</a>
-                        </li>
-                    </ul>
-                    <span class="navbar-text text-white">
-                        +7411209876
-                        </span>
-                </div>
-            </div>
-        </nav>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-bold" aria-current="page" href="Index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-bold" href="Menu.html">MENU</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fs-6 active fw-bold" href="Locasion.html">LOCACIÓN</a>
+            </li>
+          </ul>
+          <span class="navbar-text text-white">
+            +7411209876
+          </span>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- carrusel-->
+  <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="imagenes/logo.png" class="img-fluid d-block w-100  " alt="..." width="500" height="600">
+        <div class="carousel-caption d-none d-md-block text-white border-primary 20px">
+          <!-- se le agrega el color del texto-->
+          <h5>Comida rapida</h5>
+          <p>Pollos fritos al sabor de kentucky</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="imagenes/locasion.png" class="img-fluid d-block w-100" alt="..." width="500" height="600">
+        <div class="carousel-caption d-none d-md-block text-white">
+          <h5>Locación</h5>
+          <p>Bonito lugar para convivir un rato en familia</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/locasion 2.jpg" class="img-fluid d-block w-100" alt="..." width="500" height="600">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- la clase para poder agregar el titulo y el texto de la imagen-->
+          <h5 class="text-white">¡¡ Visitanos !! </h5> <!-- otra forma de agregar el color del texto-->
+          <!-- texto dela imagen -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- fin carrusel-->
+
+  <section class="container my-4">
+    <h2 class="display-4 text-center fw-bold text-dark">Comida para llevar y entregas a domicilio</h2>
+    <p class="lead text-center text-dark my-2 text-success"> Xavy Fried Chickend</p>
+  </section>
+
+  <section class="container my-5 ">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card ">
+          <div class="card-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.5594122254515!2d-98.68838120602068!3d17.045268052176272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c9a737ee734905%3A0x6dfc63be380e00fa!2sXavy%20fried%20chicken!5e0!3m2!1ses-419!2smx!4v1638300751458!5m2!1ses-419!2smx"
+              style="border:0;" class="card-img-top" width="400" height="240" allowfullscreen=""
+              loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title text-center">Comida Para Llevar Y Entregas A Domicilio</h5>
+            <p class="card-title" style="text-justify: auto;"> Cuenta la leyenda que te enamorarás a primera vista de
+              nuestro menú. Pero no creas en nuestra palabra!</p>
+            <p class="card-title my-4"> Ven y comprueba lo que estamos preparando para tí. Puedes recoger tu pedido en
+              Calle Porfirio Diaz, Iliatenco</p>
+            <p class="my-4">Nosotros podemos llevar tu pedido dónde lo desees (solo en el centro de Iliatenco)</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- carrusel-->
-    <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </section>
+  <h3 class="text-center fw-bold  my-4">Estamos ubicados en Iliatenco y nos encantaría tomar tu pedido en línea.</h3>
+  <p class="text-center fw-bold opacity-75 my-4"> Tómate tu tiempo para mirar nuestro menú en línea interactivo y pide
+    cuando estés listo. Nos tomamos aproximadamente un minuto en confirmar tu pedido y darte un tiempo estimado para que
+    esté listo.</p>
+  </section>
+<section class="container py-3"></section>
+
+
+
+
+
+  <footer class="bg-dark text-white  ">
+    <!-- py es el tamaño de las letras, clase para agregar texto en la pie de la imagen -->
+    <!-- inicia footer -->
+    <div class="container text-center ">
+      <nav class="row py-4">
+        <!--logo-->
+        <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+          <img src="imagenes/xfc.png" alt="Logo CFK" class="img-logo mr mx-2" width="40" height="40">
+          XAVY FRIED CHICKEN
+        </a>
+        <!-- menu -->
+
+
+        <hr class="clearfix w-100 d-md-none pb-3 bg-dark ">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <p class="text-uppercase">Contacto</p>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">jalilpolo99@gmail.com</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">yolagamar@gmail.com</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Tel.7574886124</a>
+            </li>
+          </ul>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="imagenes/logo.png" class="d-block w-100" alt="..." width="500" height="600">
-            <div class="carousel-caption d-none d-md-block text-white border-primary 20px">   <!-- se le agrega el color del texto-->
-              <h5>Comida rapida</h5>
-              <p>Pollos fritos al sabor de kentucky</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="imagenes/locasion.png" class="d-block w-100" alt="..."width="500" height="600">
-            <div class="carousel-caption d-none d-md-block text-white">
-              <h5>Locación</h5>
-              <p>Bonito lugar para convivir un rato en familia</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="imagenes/locasion 2.jpg" class="d-block w-100" alt="..." width="500" height="600">
-            <div class="carousel-caption d-none d-md-block">   <!-- la clase para poder agregar el titulo y el texto de la imagen-->
-              <h5 class= "text-white">¡¡ Visitanos !! </h5>   <!-- otra forma de agregar el color del texto-->
-                <!-- texto dela imagen -->
-            </div>
-          </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <p class="text-uppercase">Links</p>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">https://getbootstrap.com/</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">https://www.flaticon.es/</a>
+            </li>
+          </ul>
+
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    <!-- fin carrusel-->
+        <!-- Grid column -->
 
-    <section class="container my-5">
-        <h2 class="display-4 text-center fw-bold text-dark">Comida para llevar y entregas a domicilio</h2>
-        <p class= "lead text-center text-dark my-2 text-success"> Xavy Fried Chickend</p>
-</section>
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
 
-<div class =" ">
-     <section class="container my-5">
-    <div class="card text-white  bg-dark mb-3 float-md-end" style="max-width: 25rem;">
-        <h2 class= "text-center fw-bold my-4"> Comida Para Llevar Y Entregas A Domicilio</h2>
-       
-        <div class="card-body ">
-        
-          <p class="card-title"> Cuenta la leyenda que te enamorarás a primera vista de nuestro menú. Pero no creas en nuestra palabra!</p>
-          <p class="card-title my-4"> Ven y comprueba lo que estamos preparando para tí. Puedes recoger tu pedido en Calle  Porfirio Diaz, Iliatenco</p>
-          <p class="my-4" >Nosotros podemos llevar tu pedido dónde lo desees (solo en el centro de Iliatenco)</p>
-        
-          <p class="card-text"></p>
+          <!-- Links -->
+          <p class="text-uppercase">Redes sociales</p>
+
+          <ul class="list-unstyled text-white mr-3 ">
+            <li>
+              <img src="imagenes/facebook.png" alt="" width="20" height="20">
+              <a href="#!" class="text-white">Xavy Fried Chickend</a>
+            </li>
+            <li>
+              <img src="imagenes/whatsapp.png" alt="" width="20" height="20">
+              <a href="#!" class="text-white">757-488-61-24</a>
+            </li>
+            <li>
+              <img src="imagenes/instagram.png" alt="" width="20" height="20">
+              <a href="#!" class="text-white">Pollis-Ilia</a>
+            </li>
+
+          </ul>
+
         </div>
-      </div>
-      
-     <p> </p>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1907.2781551720427!2d-98.68569447147193!3d17.045420014787087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c9a737ee734905%3A0x6dfc63be380e00fa!2sXavy%20fried%20chicken!5e0!3m2!1ses-419!2smx!4v1636866238198!5m2!1ses-419!2smx" width="500" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-     <h3 class="text-center fw-bold opacity-75 my-4">Estamos ubicados en Iliatenco y nos encantaría tomar tu pedido en línea.</h3>
-     <p class="text-center fw-bold opacity-75"> Tómate tu tiempo para mirar nuestro menú en línea interactivo y pide cuando estés listo. Nos tomamos aproximadamente un minuto en confirmar tu pedido y darte un tiempo estimado para que esté listo.</p>
-    </section>
+      </nav>
+    </div>
+    <!-- Grid row -->
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 bg-black text-white opacity-75">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+
+    <!-- Copyright -->
+
+
+  </footer> <!-- fin de footer-->
 
 
 
-     
 
-
-
-
-
-     <footer class="bg-dark text-white  py-4">   <!-- py es el tamaño de las letras, clase para agregar texto en la pie de la imagen -->
-        <!-- inicia footer -->
-        <div class="container text-center">
-            <nav class="row">
-                <!--logo-->
-                <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
-                  <img src="imagenes/xfc.png" alt="Logo CFK"  class="img-logo mr mx-2" width="40" height="40" >
-                     XAVY FRIED CHICKEN
-                </a>
-                <!-- menu -->
-                <ul class="col-3 list-unstyled">
-                    <li class="font-weight-bol text-uppercase">Contacto:</li>
-                    <li><a href="#" class="text-reset">757-488-61-24</a></li>
-                    <li><a href="#" class="text-reset">Jalilpolo99@gmail.com</a></li>
-                    <li><a href="#" class="text-reset">yogamar@gmail.com</a></li>
-                    
-
-                </ul>
-                <!-- menu 2 -->
-                <ul class=" col-3 list-unstyled">
-                  <li class="font-weight-bol text-uppercase">links:</li>
-                  <li><a href="#" class="text-reset">https://getbootstrap.com/</a></li>
-                  <li><a href="#" class="text-reset">https://www.flaticon.es/</a></li>
-                  <li><a href="#" class="text-reset">https://www.google.com.mx/</a></li>
-                  
-              </ul>
-                <!-- redes sociales-->
-                <ul class=" col-3 list-unstyled">
-                  <li class="font-weight-bol text-uppercase text-center ">Redes sociales</li>
-                  <li class="d-flex justify-content-between">
-                      <li><a href="#" class="text-reset">
-                          <img src="imagenes/facebook.png" class="" alt="" width="24" height="24">
-                         Xavy Fried Chic
-                      </a></li>
-                      <li><a href="#" class="text-reset  ">
-                          <img src="imagenes/instagram.png" alt="" width="24" height="24">
-                          PollosIlia_2021
-                      </a></li>
-                      <li><a href="#" class="text-reset">
-                          <img src="imagenes/whatsapp.png" class="" alt="" width="24" height="24">
-                          777-327-98-35
-                      </a></li>
-                    
-                  </li>
-                  
-              </ul>
-            </nav>
-            
-        </div>
-  </footer>  <!-- fin de footer-->
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
